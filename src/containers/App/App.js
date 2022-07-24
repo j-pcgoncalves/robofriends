@@ -30,19 +30,18 @@ class App extends React.Component {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase())
         });
 
-        if (robots.length === 0) {
-            return <h1 className='tc f1'>Loading</h1>
-        } else {
-            return (
-                <div className='tc'>
-                    <h1 className='f1'>RoboFriends</h1>
-                    <SearchBox searchChange={this.onSearchChange} />
-                    <Scroll>
-                        <CardList robots={filteredRobots} />
-                    </Scroll>
-                </div>
-            );
-        };
+        return !robots.length ? 
+        <h1 className='tc f1'>Loading</h1> :
+        (
+            <div className='tc'>
+                <h1 className='f1'>RoboFriends</h1>
+                <SearchBox searchChange={this.onSearchChange} />
+                <Scroll>
+                    <CardList robots={filteredRobots} />
+                </Scroll>
+            </div>
+        );
+        
     }
 }
 
