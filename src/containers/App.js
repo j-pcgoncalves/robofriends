@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SearchBox from "../components/SearchBox";
+import Scroll from "../components/Scroll";
 import "./App.css";
 
 const App = () => {
@@ -26,6 +27,9 @@ const App = () => {
             <div className="tc">
                 <h1 className="f1">RoboFriends</h1>
                 <SearchBox searchChange={onSearchChange} />
+                <Scroll>
+
+                </Scroll>
             </div>
         );
 }
