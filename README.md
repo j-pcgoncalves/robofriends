@@ -1,6 +1,6 @@
 # Robofriends
 
-This is a simple Project built in React. It allows users to filter Cards based on what is written in the search field. This app was built to learn the basics of React, but right now i am starting to convert everything to React Redux for state management.
+This is a simple Project built in React. It allows users to filter Cards based on what is written in the search field. This app was built to learn the basics of React and it uses React Redux for state management.
 
 ## How to Use
 
