@@ -9,7 +9,7 @@ import {
 import { createLogger } from 'redux-logger';
 import { thunk } from 'redux-thunk';
 import "tachyons";
-import * as serviceWorker from "./serviceWorker";
+import * as serviceWorker from "./serviceWorkerRegistration";
 
 import './index.css';
 import App from './containers/App';
