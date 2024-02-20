@@ -39,9 +39,15 @@ const App = ({ searchField, onSearchChange, onRequestRobots, isPending, robots }
             <div className="tc">
                 <Header />
                 <SearchBox searchChange={onSearchChange} />
-                <Scroll>
-                    <CardList robots={filteredRobots} />
-                </Scroll>
+                {
+                    isPending 
+                        ?
+                            <h1>Loading</h1>
+                        :
+                            <Scroll>
+                                <CardList robots={filteredRobots} />
+                            </Scroll>
+                }
             </div>
         );
 }
