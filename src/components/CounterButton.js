@@ -12,7 +12,7 @@ const CounterButton = ({ color }) => {
     }, [count])
 
     return (
-        <button color={color} onClick={updateCount}>
+        <button id="counter" color={color} onClick={updateCount}>
             Count: {count}
         </button>
     );
