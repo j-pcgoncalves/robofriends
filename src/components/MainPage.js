@@ -1,10 +1,10 @@
-import { Component, useEffect } from "react";
+import { Component } from "react";
 
-import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
+import CardList from "./CardList";
+import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 import "./MainPage.css";
-import Header from "../components/Header";
+import Header from "./Header";
 
 class MainPage extends Component {
     componentDidMount() {
