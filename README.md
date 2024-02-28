@@ -1,6 +1,6 @@
 # Robofriends
 
-This is a simple Project built in React. It allows users to filter Cards based on what is written in the search field. This app was built to learn the basics of React and it uses React Redux for state management. Is now fully converted to be a Progressive Web App (PWA). This App is tested with Jest and Enzyme.
+This is a simple Project built in React. It allows users to filter Cards based on what is written in the search field. This app was built to learn the basics of React and it uses React Redux for state management. Is now fully converted to be a Progressive Web App (PWA). This App is tested with Jest and Enzyme. This project was converted to use TypeScript with React, so some files and components are using TypeScript.
 
 ## How to Use
 
