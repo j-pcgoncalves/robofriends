@@ -7,11 +7,12 @@ import {
 } from "./constants";
 import { getData } from "./utils/data.utils";
 
-type Action<T = string> = {
+export type Action<T = string> = {
     type: T;
+    payload?: Monster[] | unknown;
 }
 
-type Monster = {
+export type Monster = {
     id: string;
     name: string;
     email: string;
@@ -27,7 +28,7 @@ export const requestRobots = () => (dispatch: Dispatch<Action>) => {
         try {
             const users = await getData<Monster[]>("https://jsonplaceholder.typicode.com/users");
             dispatch({ type: REQUEST_ROBOTS_SUCESS, payload: users });
-        } catch (e) {
+        } catch (e: unknown) {
             dispatch({ type: REQUEST_ROBOTS_FAILED, payload: e })
         }
     }
