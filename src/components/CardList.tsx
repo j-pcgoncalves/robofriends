@@ -1,6 +1,11 @@
 import Card from "./Card";
+import { Robot } from "../actions";
 
-const CardList = ({ robots }) => {
+type CardListProps = {
+    robots: Robot[];
+}
+
+const CardList = ({ robots }: CardListProps) => {
     return (
         <div>
             {

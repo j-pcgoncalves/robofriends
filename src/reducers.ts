@@ -5,7 +5,7 @@ import {
     REQUEST_ROBOTS_PENDING
 } from "./constants";
 
-import { Action, Monster } from "./actions";
+import { Action, Robot } from "./actions";
 
 type StateSearch = {
     searchField: string;
@@ -13,7 +13,7 @@ type StateSearch = {
 
 type StateRobots = {
     isPending: boolean;
-    robots: Monster[];
+    robots: Robot[];
     error: string;
 }
 

@@ -9,10 +9,10 @@ import { getData } from "./utils/data.utils";
 
 export type Action<T = string> = {
     type: T;
-    payload?: Monster[] | unknown;
+    payload?: Robot[] | unknown;
 }
 
-export type Monster = {
+export type Robot = {
     id: string;
     name: string;
     email: string;
@@ -26,7 +26,7 @@ export const setSearchField = (text: string) => ({
 export const requestRobots = () => (dispatch: Dispatch<Action>) => {
     const fetchUsers = async () => {
         try {
-            const users = await getData<Monster[]>("https://jsonplaceholder.typicode.com/users");
+            const users = await getData<Robot[]>("https://jsonplaceholder.typicode.com/users");
             dispatch({ type: REQUEST_ROBOTS_SUCESS, payload: users });
         } catch (e: unknown) {
             dispatch({ type: REQUEST_ROBOTS_FAILED, payload: e })

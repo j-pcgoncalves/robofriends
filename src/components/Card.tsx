@@ -1,4 +1,10 @@
-const Card = ({ name, email, id }) => {
+type CardProps = {
+    name: string;
+    email: string;
+    id: string;
+}
+
+const Card = ({ name, email, id }: CardProps) => {
     return (
         <div className="tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5">
             <img alt="Robot" src={`https://robohash.org/${id}?size=200x200`} />
