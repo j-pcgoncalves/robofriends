@@ -1,4 +1,8 @@
-const SearchBox = ({ searchChange }) => {
+interface ISearchBoxProps {
+    searchChange: any
+}
+
+const SearchBox = ({ searchChange }: ISearchBoxProps) => {
     return (
         <div className="pa2">
             <input
